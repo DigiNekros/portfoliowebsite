@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- website title -->
+    <title>Parker's Portfolio</title>
+    <!-- link to main.css -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<style>
+    h1.title{
+        text-align: center;
+    }
+    h2.subtitle{
+        text-align: center;
+    }
+    p.intro{
+        text-align: center;
+    }
+</style>
+<body>
+    <!-- header -->
+    <header>
+        <h1 class = "title">Parker's Portfolio</h1>
+    </header>
+
+    <!-- introduction section -->
+    <section id="introduction">
+        <h2 class = "subtitle">Introduction</h2>
+        <p class = "intro">Hi, I'm Parker Nguyen! I'm a student at California State University, Fullerton that is majoring in computer science. I am currently interested in becoming a game developer, with experience and familiarity in the field.</p>
+    </section>
+
+    <!-- button row: skills, projects, contact info, and show all -->
+    <div class="button-row">
+        <button id="toggle-skills-button" class="button">Skills Showcase</button>
+        <button id="toggle-projects-button" class="button">Projects Showcase</button>
+        <button id="display-contact-button" class="button">Contact Information</button>
+        <button id="show-all-button" class="button">Show All</button>
+    </div>
+
+    <!-- info containers -->
+    <div class="container">
+        <!-- skills: coding languages, frameworks, game engines -->
+        <div id="skills-container" class="content-container">
+            <h2>Skills and Expertise Showcase</h2>
+            <ul>Coding Languages
+                <li>C++</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <ul>Frameworks
+                <li>QT C++</li>
+                <li>Pygame</li>
+                <li>React Native</li>
+                <li>Bootstrap</li>
+            </ul>
+            <ul>Game Engines
+                <li>Unreal Engine 5</li>
+                <li>Godot</li>
+                <li>Unity</li>
+            </ul>
+        </div>
+
+        <!-- past projects: includes github links, description, and important things about the project-->
+        <div id="projects-container" class="content-container">
+            <h2>Projects Showcase</h2>
+            <div class='project'>
+                <h3>Pokepolls</h3>
+                <p>A game made for Android, using React JS. You have to list every Pokemon as fast as possible.</p>
+                <ul>Notable Features and Contributions:
+                    <li>Displays a timer to monitor the player's progress.</li>
+                    <li>Added Pokemon themed text and music.</li>
+                    <li>Uses the PokeAPI to fetch names of all Pokemon.</li>
+                    <li>Ability to save a user's attempt, including their name, score, and time.</li>
+                </ul>
+                <a href='https://github.com/DigiNekros/pokepolls' target="_blank">Github Link</a>
+            </div>
+            <div class='project'>
+                <h3>Pacman Portal</h3>
+                <p>A recreation of Pacman made in Python, using the pygame library. Unlike normal Pacman, the player can use portals to teleport.</p>
+                <ul>Notable Features and Contributions:
+                    <li>Coded the functionality of the player's interactions with pellets, fruit, and the Ghosts.</li>
+                    <li>Worked on the sprite art of Pacman and the Ghosts.</li>
+                    <li>Includes a high score system after the game is over, saves the highest score.</li>
+                    <li>Worked diligently alongside other peers, with successful results.</li>
+                </ul>
+                <a href='https://github.com/DigiNekros/cpsc386-pacman-portal' target="_blank">Github Link</a>
+            </div>
+        </div>
+        <!-- contact info: business email and phone -->
+        <div id="contact-container" class="content-container">
+            <h2>Contact Information</h2>
+            <p>Business Email: diginekros@csu.fullerton.edu</p>
+            <p>Phone: (714)623-4440</p>
+        </div>
+    </div>
+    <!-- connect to main.js -->
+    <script src="main.js"></script>
+</body>
+</html>
